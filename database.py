@@ -17,5 +17,5 @@ def load_jobs_from_db():
     result = conn.execute(text("select * from jobs"))
     jobs = []
     for row in result:
-      jobs.append(dict(row))      
+      jobs.append(row._asdict())      
     return jobs
