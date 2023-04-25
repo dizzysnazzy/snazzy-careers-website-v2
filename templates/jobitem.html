@@ -7,10 +7,13 @@
     <div>
       <b>Location: </b> {{item['location']}}
     </div>
-    {% if 'salary' in job %}
-      <div>
-        <b>Salary: </b> {{item['salary']}}
-      </div>
+    {% if 'salary' in item %}
+      {% if 'currency' in item and 'salary' in item %}
+        <div>
+          <!--<b>Salary: </b> {{item['currency']}} {{item['salary']}}-->
+          <b>Salary: </b> {{item.currency}} {{item.salary}}
+        </div>
+      {% endif %}
     {% endif %}
   </div>
   <div class="col-3">
