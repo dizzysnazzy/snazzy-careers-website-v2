@@ -2,19 +2,19 @@
   <div class="col-9">
     <h4 
       style="color:rgb(120, 120, 120); margin-bottom:4px;">
-      {{job['title']}}
+      {{item['title']}}
     </h4>
     <div>
-      <b>Location: </b> {{job['location']}}
+      <b>Location: </b> {{item['location']}}
     </div>
     {% if 'salary' in job %}
-    <div>
-      <b>Salary: </b> {{job['salary']}}
-    </div>
+      <div>
+        <b>Salary: </b> {{item['salary']}}
+      </div>
     {% endif %}
   </div>
   <div class="col-3">
-    <!-- <a href="mailto:dizzysnazzy0@gmail.com?subject=Applying for a {{job['title']}} Position" type="button" class="btn btn-outline-primary">Apply</a> -->
-    <a href="/jobs/{{job['id']}}" type="button" class="btn btn-outline-primary">Apply</a>
+    <!-- <a href="mailto:dizzysnazzy0@gmail.com?subject=Applying for a {{item['title']}} Position" type="button" class="btn btn-outline-primary">Apply</a> -->
+    <a href="/jobs/{{item['id']}}" type="button" class="btn btn-outline-primary">Apply</a>
   </div>  
 </div>
