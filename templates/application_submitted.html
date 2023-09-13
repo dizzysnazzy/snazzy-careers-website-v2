@@ -9,8 +9,9 @@
     {% include 'banner.html' %}    
 
     <div class="container">
-    <h1 class="text-center mt-2 mb-4">Snazzy Careers</h1>
-      <p>Your application for the role of <b>{{job['title']}}</b> at Snazzy has been submitted</p>
+      <h1 class="text-center mt-2 mb-4">Snazzy Company</h1>
+      <p>Your application for the role of <b>{{job['title']}}</b> at Snazzy Company has been submitted</p>
+      
       <b>Full Name</b>
       <div class="mb-2">{{application['full_name']}}</div>
 
@@ -27,7 +28,9 @@
       <div class="mb-2">{{application['work_experience']}}</div>
 
       <b>Resume URL</b>
-      <div class="mb-2">{{application['resume_url']}}</div>    
+      <div class="mb-2">{{application['resume_url']}}</div> 
+      
+    </div>
     
     {% include 'footer.html' %}
   </body>
